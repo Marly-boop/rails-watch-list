@@ -2,7 +2,7 @@
 
 <%@lists.each do |l|%>
 <ol>
-<li><%= link_to l.name, new_list_path(l)%> </li>
+<li><%= link_to l.name, list_path(l)%> </li>
 <%= link_to "Add a bookmark", new_list_bookmark_path(l)%>
 </ol>
 <% end %>

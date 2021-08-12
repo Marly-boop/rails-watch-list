@@ -1,5 +1,8 @@
 <h1>Show the List</h1>
 <ul>
 <%=@list.name%>
+<%@list.bookmarks.each do |elemeent|%>
+<%=elemeent.comment%>
+<% end %>
 </ul>
 <%= link_to "Back to Lists", lists_path%>
