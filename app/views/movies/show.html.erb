@@ -1,0 +1,9 @@
+<h1>Show the movie details</h1>
+<ul>
+<%=@movie.title%>
+<%=@movie.overview%>
+<%=@movie.poster_url%>
+<%=@movie.rating%>
+
+<li><%= link_to "Back to all movies", movies_path%></li>
+</ul>
